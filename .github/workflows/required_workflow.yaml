@@ -1,0 +1,14 @@
+name: required_workflow
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Don't mind me, just running this test workflow
